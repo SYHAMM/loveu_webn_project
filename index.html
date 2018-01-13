@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<head>
+  <title> IU Fanpage </title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    body {
+      margin: 0px;
+      border: 0px;
+      padding-top: 60px;
+    }
+    div {
+      font-family: "Apple SD 산돌고딕 Neo";
+      text-align: center;
+      margin-left: 0 0;
+      color:#5D5D5D;
+    }
+    #page {
+      margin: 0px;
+      line-height: 780px;
+    }
+    #video_info {
+      line-height: 50px;
+      font-size: 14pt;
+      font-family: "조선일보명조";
+      font-style: italic;
+      padding-bottom: 100px;
+    }
+    #page1 {
+      line-height: 660px;
+    }
+    #page2,#page4 {
+      background-color: #eddff4;
+    }
+    #navbar {
+      line-height: 55px;
+      width:100%;
+      height: 60px;
+      background-color: #B778FF;
+      position: fixed;
+      opacity:0.75;
+      top: 0;
+    }
+    #linkref {
+      text-decoration: none;
+      padding: 40px;
+      font-size: 10pt;
+    }
+    * {box-sizing:border-box}
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor:pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+  </style>
+</head>
+
+<body>
+    <div id="navbar">
+      <a href="#page1" id="linkref">메인</a>
+      <a href="#page2" id="linkref">IU?</a>
+      <a href="#page3" id="linkref">활동</a>
+      <a href="#page4" id="linkref">수상경력</a>
+      <a href="#page5" id="linkref">more</a>
+    </div>
+    <div id="page">
+      <div id="page1">
+          <iframe id="video_recent" width="720px" height="440px" align="center" src="https://www.youtube.com/embed/ZXmoJu81e6A"
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div id="video_info">
+            "비록 앨범에 담진 못했지만, 소중히 불렀고 여전히 아름다운 이 곡을 <br>
+            고인의 음악을 사랑하는 한 명의 팬으로서 존경과 추모의 마음을 담아 바칩니다."</font><br>
+            – 아이유<br>
+          </div>
+      </div>
+      <div id="page2">
+        징쨩에 대한 인포
+      </div>
+      <div id="page3">
+        활동경력
+      </div>
+      <div id="page4">
+        수상내역
+      </div>
+      <div id="page5">
+        팬페이지, 블로그, 페북 등등
+      </div>
+    </div>
+  <script src="./main.js"></script>
+</body>
