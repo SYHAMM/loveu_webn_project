@@ -76,20 +76,20 @@
   .dropdown-content {
       display: none;
       position: absolute;
-      background-color: #f9f9f9;
+      background-color: #ffffff;
       min-width: 100px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
-      padding-right: 30px;
+      padding-right: 60px;
   }
 
   .dropdown-content a {
       float: none;
       color: black;
-      padding: 16px 12px;
+      padding: 15px 15px;
       text-decoration: none;
       display: block;
-      text-align: right;
+      text-align: left;
   }
 
   .dropdown-content a:hover {
@@ -111,7 +111,9 @@
       <a href="#page4" id="linkref">수상경력</a>
       <a href="#page5" id="linkref">more</a>
       <div class="dropdown">
-        <img class="dropbtn" src="./menu-button-of-three-horizontal-lines.png"></i>
+        <button class="dropbtn" onclick="myFunction()">
+          <img src="./menu-button-of-three-horizontal-lines.png">
+        </button>
         <div class="dropdown-content">
           <a href="#page1">메인</a>
           <a href="#page2">IU?</a>
