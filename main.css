@@ -1,0 +1,141 @@
+
+body {
+  margin: 0px;
+  border: 0px;
+  padding-top: 60px;
+}
+div {
+  font-family: "210 옴니고딕 030";
+  text-align: center;
+  margin-left: 0 0;
+  color:#5D5D5D;
+}
+#page {
+  margin: 0px;
+  line-height: 780px;
+}
+#video_info {
+  line-height: 50px;
+  font-size: 14pt;
+  font-family: "조선일보명조";
+  font-style: italic;
+  padding-bottom: 100px;
+}
+#video_recent {
+  width: 65%;
+  height: 500px;
+}
+#page1 {
+  line-height: 660px;
+}
+#page2,#page4 {
+  background-color: #eddff4;
+}
+#navbar {
+  line-height: 55px;
+  width:100%;
+  height: 60px;
+  background-color: #B778FF;
+  position: fixed;
+  opacity:0.75;
+  top: 0;
+}
+.linkref {
+  text-decoration: none;
+  padding: 40px;
+  font-size: 13pt;
+}
+
+@media(max-width:800px) {
+  .linkref {
+    display: none;
+  }
+}
+@media(min-width:800px) {
+  .dropdown {
+    display: none;
+  }
+}
+
+.title {
+  font-style: italic;
+  font-family: "210 옴니고딕 030";
+  line-height: 30px;
+  padding-top: 70px;
+}
+.contents {
+  font-family: "210 옴니고딕 030";
+  line-height: 30px;
+  text-align: left;
+  padding-left: 550px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+}
+.dropdown {
+    float: right;
+    overflow: hidden;
+    padding-right: 30px;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding-right: 60px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 15px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.info_img {
+   float: left;
+   margin-top: 0px;
+   display: inline-block;
+}
+.icon-bar {
+display: block;
+width: 22px;
+height: 2px;
+background-color: #cccccc;
+border-radius: 1px;
+}
+
+.prizes {
+  line-height: 30px;
+  text-align: left;
+  padding: 30px;
+  border-spacing: 50px;
+}
+
+tr:not(.prize_contents) {
+  font-style: italic;
+  font-family: "210 옴니고딕 030";
+  padding-top: 70px;"
+}
+#prize_img {
+  float: right;
+}

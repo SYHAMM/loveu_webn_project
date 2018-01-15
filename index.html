@@ -2,149 +2,20 @@
 <head>
   <title> IU Fanpage </title>
   <meta charset="utf-8">
-  <script src="./main.js"></script>
-  <style>
-  body {
-    margin: 0px;
-    border: 0px;
-    padding-top: 60px;
-  }
-  div {
-    font-family: "Apple SD 산돌고딕 Neo";
-    text-align: center;
-    margin-left: 0 0;
-    color:#5D5D5D;
-  }
-  #page {
-    margin: 0px;
-    line-height: 780px;
-  }
-  #video_info {
-    line-height: 50px;
-    font-size: 14pt;
-    font-family: "조선일보명조";
-    font-style: italic;
-    padding-bottom: 100px;
-  }
-  #video_recent {
-    width: 65%;
-    height: 500px;
-  }
-  #page1 {
-    line-height: 660px;
-  }
-  #page2,#page4 {
-    background-color: #eddff4;
-  }
-  #navbar {
-    line-height: 55px;
-    width:100%;
-    height: 60px;
-    background-color: #B778FF;
-    position: fixed;
-    opacity:0.75;
-    top: 0;
-  }
-  #linkref {
-    text-decoration: none;
-    padding: 40px;
-    font-size: 13pt;
-  }
-
-  @media(max-width:800px) {
-    #linkref {
-      display: none;
-    }
-  }
-  @media(min-width:800px) {
-    .dropdown {
-      display: none;
-    }
-  }
-
-  .title {
-    font-style: italic;
-    font-family: "210 옴니고딕 030";
-    line-height: 30px;
-    padding-top: 70px;
-  }
-  .contents {
-    font-family: "210 옴니고딕 030";
-    line-height: 30px;
-    text-align: left;
-    padding-left: 550px;
-    padding-bottom: 30px;
-    padding-right: 30px;
-  }
-  .dropdown {
-      float: right;
-      overflow: hidden;
-      padding-right: 30px;
-  }
-
-  .dropdown .dropbtn {
-      border: none;
-      outline: none;
-      padding: 14px 16px;
-      background-color: inherit;
-  }
-
-  .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #ffffff;
-      min-width: 100px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-      padding-right: 60px;
-  }
-
-  .dropdown-content a {
-      float: none;
-      color: black;
-      padding: 15px 15px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-  }
-
-  .dropdown-content a:hover {
-      background-color: #ddd;
-  }
-
-  .dropdown:hover .dropdown-content {
-      display: block;
-  }
-
-  .info_img {
-     float: left;
-     margin-top: 0px;
-     border-radius: 0.3;
-  }
-  .icon-bar {
-  display: block;
-  width: 22px;
-  height: 2px;
-  background-color: #cccccc;
-  border-radius: 1px;
-}
-  .hr {
-    width: 33%;
-    height: 5px;
-  }
-  </style>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <body>
     <div id="navbar">
-      <a href="#page1" id="linkref">메인</a>
-      <a href="#page2" id="linkref">IU?</a>
-      <a href="#page3" id="linkref">활동</a>
-      <a href="#page4" id="linkref">수상경력</a>
-      <a href="#page5" id="linkref">more</a>
+      <a href="#page1" class="linkref">메인</a>
+      <a href="#page2" class="linkref">IU?</a>
+      <a href="#page3" class="linkref">활동</a>
+      <a href="#page4" class="linkref">수상경력</a>
+      <a href="#page5" class="linkref">more</a>
       <div class="dropdown">
         <button class="dropbtn" onclick="myFunction()">
-          <img src="./menu-button-of-three-horizontal-lines.png">
+          <i class="fa fa-bars fa-3x"></i>
         </button>
         <div class="dropdown-content">
           <a href="#page1">메인</a>
@@ -167,11 +38,11 @@
       </div>
       <div id="page2">
         <div class="info_img">
-          <img class="info_img" src="./IU_info.jpg" height="828px">
+          <img class="info_img" src="./IU_info.jpg" height="827px">
         </div>
         <div class="info">
           <div class="title">
-            <font style="font-size:65pt;" style="bold">아이유</font><br>
+            <font style="font-size:65pt; font-weight:bold;">아이유</font><br>
             <font style="font-size:10pt;">'너와 내가 음악으로 하나가 된다'</font><br>
           </div>
 
@@ -200,10 +71,70 @@
         </div>
       </div>
       <div id="page3">
-        활동경력
+        활동
       </div>
       <div id="page4">
-        수상내역
+        <table class="prizes">
+          <tr>
+            <td>
+              <font style="font-size:65pt; font-weight:bold;">수상 경력</font>
+            </td>
+          </tr>
+          <tr class="prize_contents">
+            <td>
+              <p>
+              <b>KBS 연기대상</b><br>
+              2013 <최고다 이순신> - 여자신인상, 베스트 커플상<br>
+              ------------------------------<br>
+            <b>SBS 연기대상</b> <br>
+              2016 <달의 연인 - 보보경심 려> - 베스트 커플상<br>
+              ------------------------------<br>
+            <b>MNET</b><br>
+              Mnet 20's Choice 2011 - HOT CF 스타상<br>
+              2011 MAMA - <좋은날> 베스트 보컬 퍼포먼스 여자 솔로<br>
+              2012 MAMA - <너랑 나> 최우수 여자 가수<br>
+              2014 MAMA - 여자 가수상, The Most Popular Vocalist<br>
+              2017 MAMA - 여자 가수상<br>
+              ------------------------------<br>
+              <b>가온차트 뮤직어워즈</b><br>
+              2012 <나만 몰랐었던 이야기> 올해의 가수상(음원) 2월<br>
+              2012 <너랑 나> 올해의 가수상(음원) 12월<br>
+              2014 <분홍신> 올해의 가수상(음원) 10월<br>
+              ------------------------------<br>
+              <b>골든디스크</b><br>
+              2010 <잔소리> 디지털 음원 부문 본상<br>
+              2018 <밤편지> 디지털 음원 부문 본상, 디지털 음원 부문 대상<br>
+              ------------------------------<br></p></td>
+            <td>
+              <p>
+              <b>니켈로디언 코리아 키즈 초이스 어워드</b><br>
+              2011 좋아하는 여자 가수상<br>
+              2012 좋아하는 여자 가수상<br>
+              ----------------------------<br>
+              <b>멜론 뮤직 어워드(MMA)</b><br>
+              2010 <잔소리> Song Writer상, TOP 10<br>
+              2011 <좋은날> TOP 10, 베스트 송 상<br>
+              2012 <너랑나> TOP 10<br>
+              2013 <분홍신> TOP 10<br>
+              2014 <너의 의미> TOP 10, 아티스트상<br>
+              2017 <팔레트> TOP 10<br>
+                   "Pallete" 올해의 앨범상<br>
+                   Song Writer상<br>
+              ----------------------------<br>
+              <b>하이원 서울가요대상</b><br>
+              2011 <좋은날> 디지털 음원상, 본상<br>
+              2012 <너랑 나> 본상<br>
+              2012 "Last Fantasy" 최고 앨범상<br>
+              ----------------------------<br>
+              <b>한국 대중 음악상</b><br>
+              2012 <좋은날> 올해의 노래 수상, 최우수 팝 노래 수상<br>
+                   네티즌이 뽑은 올해의 여자 아티스트 수상<br>
+              2016 네티즌이 뽑은 올해의 음악인 여자부문 수상<br></p></td>
+            <td>
+              <img id="prize_img" src="./IU_Prize.jpg">
+            </td>
+          </tr>
+        </table>
       </div>
       <div id="page5">
         팬페이지, 블로그, 페북 등등
